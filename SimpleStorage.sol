@@ -2,11 +2,12 @@
 pragma solidity 0.8.18;
 
 contract SimpleStorage {
-    //Basic types: boolean, uint, int, address, bytes
-    bool hasFavoriteNumber = true;
-    uint256 favoriteNumber = 88;
-    string favoriteNumberInText = "eighty-eight";
-    int256 favoriteInt = -88;
-    address myAddress = 0x0008cC44b4fF3B7A2D6d5E9eEc53a1CE69Ed46B95;
-    bytes32 favoriteBytes32 = "cat"; //
+    //favoriteNumber gets initialized to 0 if no value is given
+
+    uint256 public favoriteNumber; //0
+
+    function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+    }
+
 }
