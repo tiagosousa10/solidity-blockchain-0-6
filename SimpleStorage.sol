@@ -20,6 +20,10 @@ contract SimpleStorage {
 //    Person public pat = Person({favoriteNumber: 7, name: "pat"});
   //  Person public mariah = Person({favoriteNumber: 3, name: "mariah"});
 
+// chelsea -> 232
+    mapping(string => uint256) public nameToFavoriteNumber;
+
+
     function store(uint256 _favoriteNumber) public {
         myFavoriteNumber = _favoriteNumber;
     }
@@ -29,9 +33,14 @@ contract SimpleStorage {
         return myFavoriteNumber;
     }
 
+//calldata (you CANT modify), memory(you can modify) -> temporary variables     || storage 
     function addPerson(string memory _name, uint256 _favoriteNumber ) public {
+        //_name = "cat";
+        
         //Person memory newPerson = Person(_favoriteNumber, _name)
         listOfPeople.push(Person(_favoriteNumber, _name));
+
+        nameToFavoriteNumber[_name] =  _favoriteNumber;
     }
 
 }
