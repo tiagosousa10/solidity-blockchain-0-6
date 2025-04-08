@@ -7,12 +7,17 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "favoriteNumber",
+				"name": "pat",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "favoriteNumber",
 						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -73,11 +78,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0x7887fc837ef7db4a4107d7ddd958b49e87e0fadd40f59c7ca6a475d3176a0817",
+			"keccak256": "0xac508a4e6720d9a29f84790facf0beb0936e5ca45e11a065cf06d9a9d7f3d498",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://470fe480810383e4e8a6606f053a9f4fc226e63f54f275cccc580fcf0843b1ae",
-				"dweb:/ipfs/QmWpyj9Fo8dQJ5KA3AbL2LjRjtQLnoCEuaPi4Q4mAUtYwT"
+				"bzz-raw://3afe66e67bb89f3965bdc78ca20483d33b430478bedb663f31a110d388dc84d4",
+				"dweb:/ipfs/QmTiTo47KJxwcwfcJVSjkURk8t6N17r4couKDeMaNKV49v"
 			]
 		}
 	},
