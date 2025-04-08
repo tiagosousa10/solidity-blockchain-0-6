@@ -14,8 +14,11 @@ contract SimpleStorage {
         string name;
     }
 
-    Person public pat = Person({favoriteNumber: 7, name: "pat"});
-    Person public mariah = Person({favoriteNumber: 3, name: "mariah"});
+    //dynamic array
+    Person [] public listOfPeople; // [] empty list || [3] -> static array
+
+//    Person public pat = Person({favoriteNumber: 7, name: "pat"});
+  //  Person public mariah = Person({favoriteNumber: 3, name: "mariah"});
 
     function store(uint256 _favoriteNumber) public {
         myFavoriteNumber = _favoriteNumber;
@@ -24,6 +27,11 @@ contract SimpleStorage {
     //view -> read state (dont update) || pure 
     function retrieve() public view returns (uint256) {
         return myFavoriteNumber;
+    }
+
+    function addPerson(string memory _name, uint256 _favoriteNumber ) public {
+        //Person memory newPerson = Person(_favoriteNumber, _name)
+        listOfPeople.push(Person(_favoriteNumber, _name));
     }
 
 }
