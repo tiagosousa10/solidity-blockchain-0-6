@@ -19,7 +19,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "myValue",
+				"name": "minimumUsd",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -59,11 +59,11 @@
 	},
 	"sources": {
 		"FundMe.sol": {
-			"keccak256": "0x30ff9d37579b48ab65051368a46875804829b8663c097325dba0ccab2ce8c1f5",
+			"keccak256": "0x810d9fb27e4ce7b38eb80788b5ff68df80d1274570a1dc51b86b0c199fdc76a7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c86cee5034c315c6426858e3aeb1979f894e32c5216e29b93c5c3b7e5fdee37a",
-				"dweb:/ipfs/QmQ6N9xhQMcwv9VNKchv1qCd68a8VTz1eyw1KEefXfJFkq"
+				"bzz-raw://8e773be0d0994130ff5860559a411e8abd4c35b57cce4048bb508df868a29d71",
+				"dweb:/ipfs/QmTGn3RAk3idxcKgrYdBmwXp1j8qtTk2zRUa4WPhmkYMne"
 			]
 		}
 	},
