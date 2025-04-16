@@ -14,8 +14,7 @@ contract FundMe {
     mapping (address funder => uint256 amountFunded) public addressToAmountFunded;
 
     function fund() public payable {
-        msg.value.getConversionRate();
-    //require(getConversionRate(msg.value) >= minimumUsd, "didn't send enough ether");
+        require(msg.value.getConversionRate() >= minimumUsd, "didn't send enough ether");
         funders.push(msg.sender);
         addressToAmountFunded[msg.sender] = addressToAmountFunded[msg.sender] + msg.value;
 
