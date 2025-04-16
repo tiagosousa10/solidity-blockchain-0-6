@@ -5,13 +5,18 @@ import {PriceConverter} from "./PriceConverter.sol";
 
 contract FundMe {
     using PriceConverter for uint256;
-    constructor() payable  {}
 
     //uint256 public myValue = 1;
     uint public minimumUsd = 5e18;
 
     address[] public funders;
     mapping (address funder => uint256 amountFunded) public addressToAmountFunded;
+
+    address public owner;
+
+    constructor() payable  {
+        owner = msg.sender;
+    }
 
     function fund() public payable {
         require(msg.value.getConversionRate() >= minimumUsd, "didn't send enough ether");
@@ -20,6 +25,7 @@ contract FundMe {
     }
 
     function withdraw() public{
+        require(msg.sender == owner , "Must be owner");
         // for loop
         // [1,2,3]
         //for(/*starting index, ending index, step amount */)
