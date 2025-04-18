@@ -1,6 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.19;
 
+// AI
+//1. Limit self-triage to 15/20minutes
+//2. Don't be afraid to ask AI, but dont skip learning 
+//3. Use forums
+//4. Google the exact error
+//5. Post in stack exchange or peeranha.io
+//6. Posting an issue on github/git
+
 import {PriceConverter} from "./PriceConverter.sol";
 
 error NotOwner();
