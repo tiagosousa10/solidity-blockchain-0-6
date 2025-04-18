@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "result",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FallbackExample.sol": "FallbackExample"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FallbackExample.sol": {
+			"keccak256": "0x2f8d7dafa076445228aad53072070efc56f395af104401fced0c8c15e28afb2b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8cde1b8e58c0fc52451f8a032c410e0742684ff51213e30cf699394bee1e8693",
+				"dweb:/ipfs/QmfGWYPFcv6KhCfQfMPVdfF7u8HuEEJFuweRUY6buE8ArY"
+			]
+		}
+	},
+	"version": 1
+}

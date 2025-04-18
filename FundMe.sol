@@ -3,6 +3,7 @@ pragma solidity 0.8.19;
 
 import {PriceConverter} from "./PriceConverter.sol";
 
+error NotOwner();
 contract FundMe {
     using PriceConverter for uint256;
 
@@ -24,6 +25,7 @@ contract FundMe {
         funders.push(msg.sender);
         addressToAmountFunded[msg.sender] += msg.value;
     }
+
 
     function withdraw() public onlyOwner{
         // for loop
@@ -56,11 +58,15 @@ contract FundMe {
 
     }
 
+
     modifier onlyOwner(){
-        require(msg.sender == i_owner, "Sender is not the owner1");
+        //require(msg.sender == i_owner, "Sender is not the owner!");
+        if(msg.sender != i_owner){revert NotOwner();}
         _;
-        
     }
+
+
+// what happens if someone sends this contract ETH without calling the fund function
 
     
 }
